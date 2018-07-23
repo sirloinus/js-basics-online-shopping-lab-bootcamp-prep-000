@@ -96,7 +96,7 @@ function placeOrder(cardNumber) {
   }
   if (cardNumber) {
     cart.length = 0
-    creditCardNumber = cardNumber
+    let creditCardNumber = cardNumber
     return `Your  total cost is ${total}, which will be charged to the card ${creditCardNumber}.`
   }
 }
