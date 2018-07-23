@@ -65,6 +65,7 @@ function total() {
     total += cart[i].itemPrice
   }
   return total
+  
   // return cart.reduce((accumulator, cartItem) => accumulator + cartItem.itemPrice, 0)
 }
 
@@ -95,7 +96,8 @@ function placeOrder(cardNumber) {
   }
   if (cardNumber) {
     cart.length = 0
-    return `Your  total cost is ${total}, which will be charged to the card ${cardNumber}.`
+    creditCardNumber = cardNumber
+    return `Your  total cost is ${total}, which will be charged to the card ${creditCardNumber}.`
   }
 }
 
